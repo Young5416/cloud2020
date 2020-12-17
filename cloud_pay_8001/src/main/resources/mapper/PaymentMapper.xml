@@ -8,7 +8,7 @@
         <id column="serial" property="serial" jdbcType="VARCHAR"/>
     </resultMap>
 
-    <insert id="create" parameterType="Payment" useGeneratedKeys="true" keyProperty="id">
+    <insert id="create" parameterType="com.young.springcloud.entities.Payment" useGeneratedKeys="true" keyProperty="id">
         insert into payment(serial) values(#{serial});
     </insert>
 
@@ -16,4 +16,4 @@
         select * from payment where id = #{id};
     </select>
 
-</mappper>
+</mapper>
