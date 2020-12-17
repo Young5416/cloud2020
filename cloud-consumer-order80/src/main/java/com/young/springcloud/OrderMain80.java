@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @description: 启动类
  * @author: Young
- * @create: 2020-12-16 12:26
+ * @create: 2020-12-17 17:53
  * @Version: 1.0
  **/
 @SpringBootApplication
-public class PaymentApplication8001 {
+public class OrderMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentApplication8001.class, args);
+        SpringApplication.run(OrderMain80.class,args);
     }
 }

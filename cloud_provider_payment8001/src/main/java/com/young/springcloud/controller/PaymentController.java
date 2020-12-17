@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.*;
  * @create: 2020-12-16 13:04
  * @Version: 1.0
  **/
-@RestController("payment")
+@RestController
+@RequestMapping("payment")
 @Slf4j
 public class PaymentController {
 
@@ -30,8 +31,8 @@ public class PaymentController {
         }
     }
 
-    @GetMapping("/getPaymentById/{id}")
-    public CommonResult getPaymentById(@PathVariable("id") Long id) {
+    @GetMapping("/get/{id}")
+    public CommonResult get(@PathVariable("id") Long id) {
         Payment payment = paymentService.getPaymentById(id);
         if (payment != null) {
             return new CommonResult(200, "查询成功", payment);
