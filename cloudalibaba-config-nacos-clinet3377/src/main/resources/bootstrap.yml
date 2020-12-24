@@ -1,0 +1,14 @@
+server:
+  port: 3377
+
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://47.104.85.220:8848
+      config:
+        server-addr: http://47.104.85.220:8848
+        file-extension: yaml
+        namespace: 053ae7b9-906e-4b5e-82c9-d8d0c494a69f
